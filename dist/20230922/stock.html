@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <title>行情</title>
+        <link rel="shortcut icon" type="image/x-icon" href="//g1.dfcfw.com/g1/special/favicon_shortcut.ico" />
+        <script>
+            (function (doc, win, fontSizeMax) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        var fontSize = parseInt(20 * (clientWidth / 375));
+                        if (fontSizeMax > 0 && fontSize > fontSizeMax) {
+                            fontSize = fontSizeMax;
+                        }
+                        docEl.style.fontSize = fontSize + 'px';
+                    };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            })(document, window, 0);
+        </script>
+        <script src='https://vipmoney.eastmoney.com/Crumbs/Content/js/ttjjstock/config.min.js'></script>
+        <script src='https://vipmoney.eastmoney.com/Crumbs/Content/jsLib/mobile_emcharts.js'></script>
+    <link href=".././static/css/common.css?v=1719014622355" rel="stylesheet"><link href=".././static/css/20230922\stock\stock.css?v=1719014622355" rel="stylesheet"><script type="text/javascript" src="../static/script/vendor.js?v=1719014622355"></script><script type="text/javascript" src="../static/script/common.js?v=1719014622355"></script><script type="text/javascript" src="../static/script/20230922\stock\stock.js?v=1719014622355"></script></head>
+    <body>
+        <div id="detail">
+            <div class="header-banner banner-border">
+                <span class="header-back"></span>
+                <div class="header-title">
+                    板块<br/>
+                    <span>BK</span>
+                </div>
+            </div>
+            <div class="hq-container">
+                <span class="number-text big">--</span>
+                <span class="number-text"></span>
+                <span class="number-text"></span>
+            </div>
+            <div class="table-line">
+                <div class="table-cell">
+                    今开<span class="number">-</span>
+                </div>
+                <div class="table-cell">
+                    最高<span class="number">-</span>
+                </div>
+                <div class="table-cell">
+                    最低<span class="number">-</span>
+                </div>
+            </div>
+            <div class="table-line">
+                <div class="table-cell">
+                    换手<span class="number">-</span>
+                </div>
+                <div class="table-cell">
+                    总手<span class="number">-</span>
+                </div>
+                <div class="table-cell">
+                    金额<span class="number">-</span>
+                </div>
+            </div>
+            <div class="table-line">
+                <div class="table-cell">
+                    上涨家数<span class="number">-</span>
+                </div>
+                <div class="table-cell">
+                    平盘家数<span class="number">-</span>
+                </div>
+                <div class="table-cell">
+                    下跌家数<span class="number">-</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="tab-container">
+            <ul class="tab">
+                <li class="active" data-type="T1">
+                    <span>分时</span>
+                </li>
+                <li data-type="T5">
+                    <span>五日</span>
+                </li>
+                <li data-type="DK">
+                    <span>日K</span>
+                </li>
+                <li data-type="WK">
+                    <span>周K</span>
+                </li>
+                <li data-type="MK">
+                    <span>月K</span>
+                </li>
+                <li>
+                    <span>更多</span>
+                    <i class="more"></i>
+                </li>
+            </ul>
+            <div class="drop">
+                <ul>
+                    <li data-type="M5K">
+                        5分钟
+                    </li>
+                    <li data-type="M15K">
+                        15分钟
+                    </li>
+                    <li data-type="M30K">
+                        30分钟
+                    </li>
+                    <li data-type="M60K">
+                        60分钟
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="chart-container marginTop" id="timechart"></div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<ul>
+    {{each data value i}}
+        <li class="border-right" onclick="javascript:linkToStock('{{value.code}}')">
+            <div class="big-number {{value.color}}">{{value.value}}</div>
+            <div class="line">
+                <span class="small-text">{{value.name}}</span>
+                <span class="small-text {{value.color}}">{{value.rate}}</span>
+            </div>
+        </li>
+    {{/each}}
+</ui>

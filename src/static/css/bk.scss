@@ -1,0 +1,148 @@
+@import './base';
+
+html, body{
+    height: auto !important;
+}
+
+.stick-banner{
+    background-color: #fff;
+    position: sticky;
+    top: 0; 
+    z-index: 7;
+}
+
+.tab{
+    display: flex;
+    li{
+        //布局
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        //其它通用样式
+        font-family: PingFangSC-Regular;
+        font-size: pxToRem(16);
+        color: #666666;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: pxToRem(16);
+        span{
+            //布局
+            display: flex;
+            align-items: center;
+            position: relative;
+            //其他样式
+            height: pxToRem(45.5);
+        }
+        &.active {
+            color: #00B893;
+        }
+        &.active span::after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            background-color: #00B893;
+            width: 100%;
+            height: pxToRem(2);
+            border-radius: pxToRem(1);
+        }
+    }
+}
+
+.table-header{
+    display: flex;
+    height: pxToRem(40);
+    background: #F7F7F7;
+    font-family: PingFangSC-Regular;
+    font-size: pxToRem(14);
+    color: #333333;
+    letter-spacing: 0;
+    text-align: right;
+    line-height: pxToRem(14);
+    div{
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+    div:first-child{
+        flex: 1.5;
+        padding-left: pxToRem(16);
+    }
+    div:last-child{
+        padding-right: pxToRem(9);
+        justify-content: flex-end;
+    } 
+    .sort{
+        width: pxToRem(22);
+        height: pxToRem(22);
+        background: url(../images/sort.png) no-repeat;
+        background-position: center center;
+        background-size: pxToRem(22) pxToRem(22);
+    }
+    .desc{
+        width: pxToRem(22);
+        height: pxToRem(22);
+        background: url(../images/desc.png) no-repeat;
+        background-position: center center;
+        background-size: pxToRem(22) pxToRem(22);
+    }
+    .asc{
+        width: pxToRem(22);
+        height: pxToRem(22);
+        background: url(../images/desc.png) no-repeat;
+        background-position: center center;
+        background-size: pxToRem(22) pxToRem(22);
+        transform: rotateX(180deg);
+    }
+}
+
+.table-line{
+    //布局
+    display: flex;
+    //其他样式
+    height: pxToRem(45);
+    font-family: PingFangSC-Regular;
+    font-size: pxToRem(16);
+    color: #000000;
+    text-align: right;
+    line-height: pxToRem(16);
+    border-bottom: pxToRem(0.5) solid #E5E5E5;
+    .red{
+        font-family: PingFangSC-Medium !important;
+        font-weight: 500;
+        color: #E64545 !important;
+    }
+    .green{
+        font-family: PingFangSC-Medium !important;
+        font-weight: 500;
+        color: #3AA64C !important;
+    }
+    > div {
+        flex: 1;
+        display: flex;
+        align-items: center;
+    }
+    > div:first-child{
+        flex: 1.5;
+        padding-left: pxToRem(16);
+    }
+    > div:last-child{
+        padding-right: pxToRem(16);
+        justify-content: flex-end;
+    }
+    div.bk-item{
+        text-align: left;
+        .bk-name{
+            color: #333333;
+            position: relative;
+            top: pxToRem(2);
+            margin-bottom: pxToRem(1);
+            &.smaller{
+                font-size: pxToRem(14);
+            }
+        }
+        .bk-code{
+            color: #999999;
+            font-size: pxToRem(10) !important;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+
+{{each list item i}}
+<div class="table-line" onclick="javascript:linkToStock('{{item.f13 + '.' + item.f12}}')">
+    <div>
+        <div class="bk-item">
+            <span class="bk-name {{(item.f14 && item.f14.length > 7) ? 'smaller' : ''}}">{{item.f14}}</span>
+            <br>
+            <span class="bk-code">{{item.f12}}</span>
+        </div>
+    </div>
+    <div class="{{item.f3|color}}">
+        {{item.f3|numberFormat2}}
+    </div>
+    <div>
+        {{item.f6|mountFormat}}
+    </div>
+</div>
+{{/each}}
+

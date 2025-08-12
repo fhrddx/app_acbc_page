@@ -1,0 +1,9 @@
+@import './base';
+
+p{
+    color: #333333;
+    font-family: PingFangSC-Regular;
+    font-size: pxToRem(14);
+    font-weight: 400;
+    line-height: pxToRem(22);
+}

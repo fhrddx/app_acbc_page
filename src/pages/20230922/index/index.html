@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <title>行情</title>
+        <link rel="shortcut icon" type="image/x-icon" href="//g1.dfcfw.com/g1/special/favicon_shortcut.ico" />
+        <script>
+            (function (doc, win, fontSizeMax) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        var fontSize = parseInt(20 * (clientWidth / 375));
+                        if (fontSizeMax > 0 && fontSize > fontSizeMax) {
+                            fontSize = fontSizeMax;
+                        }
+                        docEl.style.fontSize = fontSize + 'px';
+                    };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            })(document, window, 0);
+        </script>
+    </head>
+    <body>
+        <div class="header-banner">
+            <span class="header-back"></span>
+            股市行情
+        </div>
+
+        <div class="big-title first-child">大盘指数</div>
+
+        <div class="area">
+            <div class="content" id="zhishu">
+                <ul>
+                    <li class="border-right">
+                        <div class="big-number">--</div>
+                        <div class="line">
+                            <span class="small-text">上证指数</span>
+                            <span class="small-text"></span>
+                        </div>
+                    </li>
+                    <li class="border-right">
+                        <div class="big-number">--</div>
+                        <div class="line">
+                            <span class="small-text">深证指数</span>
+                            <span class="small-text"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-number">--</div>
+                        <div class="line">
+                            <span class="small-text">创业板指</span>
+                            <span class="small-text"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="big-title">
+            行业板块
+            <a class="big-title-right" href="./bk.html?type=0">
+                查看更多 
+            </a>
+        </div>
+
+        <div class="area" id="hangye">
+            <div class="content">
+                <ul>
+                    <li class="border-right">
+                        <div class="big-text">--</div>
+                        <div class="line">
+                            <span class="medium-number">--</span>
+                        </div>
+                    </li>
+                    <li class="border-right">
+                        <div class="big-text">--</div>
+                        <div class="line">
+                            <span class="medium-number">--</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-text">--</div>
+                        <div class="line">
+                            <span class="medium-number">--</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="content">
+                <ul>
+                    <li class="border-right">
+                        <div class="big-text">--</div>
+                        <div class="line">
+                            <span class="medium-number">--</span>
+                        </div>
+                    </li>
+                    <li class="border-right">
+                        <div class="big-text">--</div>
+                        <div class="line">
+                            <span class="medium-number">--</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-text">--</div>
+                        <div class="line">
+                            <span class="medium-number">--</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="big-title">
+            概念板块
+            <a class="big-title-right" href="./bk.html?type=1">
+                查看更多 
+            </a>
+        </div>
+
+        <div class="area" id="gainian">
+            <div class="content">
+                <ul>
+                    <li class="border-right">
+                        <div class="big-text">6G概念</div>
+                        <div class="line">
+                            <span class="medium-number red">+2.27%</span>
+                        </div>
+                    </li>
+                    <li class="border-right">
+                        <div class="big-text">阿兹海默</div>
+                        <div class="line">
+                            <span class="medium-number red">+1.65%</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-text">减肥药</div>
+                        <div class="line">
+                            <span class="medium-number red">+1.31%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="content">
+                <ul>
+                    <li class="border-right">
+                        <div class="big-text">F5G概念</div>
+                        <div class="line">
+                            <span class="medium-number red">+1.30%</span>
+                        </div>
+                    </li>
+                    <li class="border-right">
+                        <div class="big-text">毫米波概念</div>
+                        <div class="line">
+                            <span class="medium-number red">+2。34%</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="big-text">肝素概念</div>
+                        <div class="line">
+                            <span class="medium-number red">+0.65%</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="des-content">
+            <div>行情信息由第三方提供</div>
+            <a class="right-content" href="./des.html">
+                <span>使用说明</span>
+                <span class="arrow-y"></span>
+            </a>
+        </div>
+
+        <div class="msg">
+            - 市场有风险 投资须谨慎 -
+        </div>
+    </body>
+</html>

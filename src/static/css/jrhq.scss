@@ -1,0 +1,29 @@
+@import './base';
+
+.table-line{
+    display: flex;
+    font-family: PingFangSC-Regular;
+    font-size: pxToRem(16);
+    color: #333333;
+    letter-spacing: 0;
+    .red{
+        font-family: PingFangSC-Medium !important;
+        font-weight: 500 !important;
+        color: #E64545 !important;
+    }
+    .green{
+        font-family: PingFangSC-Medium !important;
+        font-weight: 500 !important;
+        color: #3AA64C !important;
+    }
+    > div {
+        flex: 1;
+        height: pxToRem(40);
+        display: flex;
+        align-items: center;
+    }
+    > div:last-child{
+        flex: 0.7;
+        justify-content: flex-end;
+    }
+}

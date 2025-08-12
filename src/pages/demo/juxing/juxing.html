@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <title>说明</title>
+        <link rel="shortcut icon" type="image/x-icon" href="//g1.dfcfw.com/g1/special/favicon_shortcut.ico" />
+        <script>
+            (function (doc, win, fontSizeMax) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        var fontSize = parseInt(20 * (clientWidth / 375));
+                        if (fontSizeMax > 0 && fontSize > fontSizeMax) {
+                            fontSize = fontSizeMax;
+                        }
+                        docEl.style.fontSize = fontSize + 'px';
+                        docEl.style.fontSize = 24 + 'px';
+                    };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            })(document, window, 0);
+            
+        </script>
+    </head>
+    <body>
+        <div class="header-banner">
+            <span class="header-back"></span>
+            矩形画布
+        </div>
+
+        <div class="button"></div>
+
+        <div class="area">
+            <div class="content" id="panel"></div>
+        </div>
+    </body>
+</html>

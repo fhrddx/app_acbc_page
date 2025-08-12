@@ -1,0 +1,43 @@
+@import './base';
+
+p{
+    color: #333333;
+    font-family: PingFangSC-Regular;
+    font-size: pxToRem(14);
+    font-weight: 400;
+    line-height: pxToRem(22);
+}
+
+.button{
+    width: pxToRem(100);
+    height: pxToRem(50);
+    border-radius: pxToRem(8);
+    margin: 1rem auto;
+    background-color: #336699;
+    opacity: 0.8;
+}
+
+.area{
+    margin-left: pxToRem(0);
+    margin-right: pxToRem(0);
+    border-radius: pxToRem(15);
+    box-shadow: 0 pxToRem(1.5) pxToRem(15) 0 rgba(0,0,0,0.02), 0 pxToRem(6) pxToRem(12) 0 rgba(0,0,0,0.08);
+    margin-top: pxToRem(24);
+    .divider{
+        margin: 0 pxToRem(17) 0 pxToRem(15);
+        border-bottom: pxToRem(0.5) solid #E5E5E5;
+    }
+}
+
+.content{
+    padding-bottom: pxToRem(14);
+    min-height: pxToRem(500);
+    position: relative;
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, transparent 49.5%, #336699 49.5%, #336699 50.5%, transparent 50.5%);
+}

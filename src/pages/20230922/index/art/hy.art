@@ -1,0 +1,27 @@
+<div class="content">
+    <ul>
+        {{each firstList fitem i}}
+        <li class="{{i < 2 ? 'border-right' : ''}}" onclick="javascript:linkToBk('{{fitem.mkt + '.' +fitem.code}}','{{fitem.name}}')">
+            <div class="big-text {{(fitem.name && fitem.name.length > 6) ? 'big-text-smaller' : ''}}">{{fitem.name}}</div>
+            <div class="line">
+                <span class="medium-number red">{{fitem.value}}</span>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+
+<div class="divider"></div>
+
+<div class="content">
+    <ul>
+        {{each secondList sitem j}}
+        <li class="{{j < 2 ? 'border-right' : ''}}" onclick="javascript:linkToBk('{{sitem.mkt + '.' +sitem.code}}','{{sitem.name}}')">
+            <div class="big-text {{(sitem.name && sitem.name.length > 6) ? 'big-text-smaller' : ''}}">{{sitem.name}}</div>
+            <div class="line">
+                <span class="medium-number red">{{sitem.value}}</span>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</div>

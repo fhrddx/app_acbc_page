@@ -1,0 +1,51 @@
+<div class="header-banner banner-border">
+    <span class="header-back"></span>
+    <div class="header-title">
+        {{data.f58}}<br/>
+        <span>{{data.f57}}</span>
+    </div>
+</div>
+
+<div class="hq-container">
+    <span class="number-text big {{data.f169|color}}">
+        {{data.f43|numberFormat:100,2}}
+    </span>
+    <span class="number-text {{data.f169|color}}">{{data.f170|numberFormat:100,2}}%</span>
+    <span class="number-text {{data.f169|color}}">{{data.f169|numberFormat:100,2}}</span>
+</div>
+
+<div class="table-line">
+    <div class="table-cell">
+        今开<span class="number {{(data.f46-data.f60)|color}}">{{data.f46|numberFormat:100,2}}</span>
+    </div>
+    <div class="table-cell">
+        最高<span class="number {{(data.f44-data.f60)|color}}">{{data.f44|numberFormat:100,2}}</span>
+    </div>
+    <div class="table-cell">
+        最低<span class="number {{(data.f45-data.f60)|color}}">{{data.f45|numberFormat:100,2}}</span>
+    </div>
+</div>
+
+<div class="table-line">
+    <div class="table-cell">
+        换手<span class="number">{{data.f168|numberFormat:100,2}}%</span>
+    </div>
+    <div class="table-cell">
+        总手<span class="number">{{data.f47|mountFormat}}</span>
+    </div>
+    <div class="table-cell">
+        金额<span class="number">{{data.f48|mountFormat}}</span>
+    </div>
+</div>
+
+<div class="table-line">
+    <div class="table-cell">
+        上涨家数<span class="number red">{{data.f113}}</span>
+    </div>
+    <div class="table-cell">
+        平盘家数<span class="number">{{data.f115}}</span>
+    </div>
+    <div class="table-cell">
+        下跌家数<span class="number green">{{data.f114}}</span>
+    </div>
+</div>

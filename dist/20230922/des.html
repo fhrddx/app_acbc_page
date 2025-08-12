@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+        <meta name="format-detection" content="telephone=no, email=no" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <title>说明</title>
+        <link rel="shortcut icon" type="image/x-icon" href="//g1.dfcfw.com/g1/special/favicon_shortcut.ico" />
+        <script>
+            (function (doc, win, fontSizeMax) {
+                var docEl = doc.documentElement,
+                    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                    recalc = function () {
+                        var clientWidth = docEl.clientWidth;
+                        if (!clientWidth) return;
+                        var fontSize = parseInt(20 * (clientWidth / 375));
+                        if (fontSizeMax > 0 && fontSize > fontSizeMax) {
+                            fontSize = fontSizeMax;
+                        }
+                        docEl.style.fontSize = fontSize + 'px';
+                    };
+                if (!doc.addEventListener) return;
+                win.addEventListener(resizeEvt, recalc, false);
+                doc.addEventListener('DOMContentLoaded', recalc, false);
+            })(document, window, 0);
+        </script>
+    <link href=".././static/css/common.css?v=1719014622355" rel="stylesheet"><link href=".././static/css/20230922\des\des.css?v=1719014622355" rel="stylesheet"><script type="text/javascript" src="../static/script/vendor.js?v=1719014622355"></script><script type="text/javascript" src="../static/script/common.js?v=1719014622355"></script><script type="text/javascript" src="../static/script/20230922\des\des.js?v=1719014622355"></script></head>
+    <body>
+        <div class="header-banner">
+            <span class="header-back"></span>
+            行情信息使用说明
+        </div>
+        <div class="section">
+            <p>
+                1.上证所行情信息由上海证券交易所及其授权、独家全权经营机构上证所信息网络有限公司提供。深市行情信息由深圳证券交易所及其授权、独家全权经营机构深圳证券信息有限公司提供。未经有权方许可，用户不得对行情信息进行任何形式的复制、传输、转让、使用、许可他人使用和开发金融、信息产品。
+            </p>
+            <p>
+                2.市场有风险，投资须谨慎。行情仅供参考，请以中国证监会指定上市公司信息披露媒体为准，用户查看或依据这些内容所进行的任何行为造成的风险和结果请自行负责。
+            </p>
+            <p>
+                3.上海证券交易所、上证所信息网络有限公司、深圳证券交易所、深圳证券信息有限公司、中国农业银行股份有限公司及其关联公司等均不对因行情信息的遗漏、错误、丢失、延迟、中断或所载资料的不准时、不准确、不完整等任何原因所引起的任何损失及损害承担责任。
+            </p>
+        </div>
+    </body>
+</html>

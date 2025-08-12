@@ -1,0 +1,149 @@
+@import './base';
+
+.big-title{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: pxToRem(16);
+    margin-right: pxToRem(13);
+    margin-top: pxToRem(45);
+    &.first-child{
+        margin-top: pxToRem(25) !important;
+    }
+}
+
+.big-title-right{
+    color: #999999;
+    font-size: pxToRem(14);
+    font-family: PingFangSC-Regular;
+    letter-spacing: 0;
+    font-weight: 400;
+    position: absolute;
+    right: pxToRem(4);
+    background: url(../images/arrow-r.png) no-repeat;
+    background-position: center right;
+    background-size: pxToRem(8.17) pxToRem(14.23);
+    padding-right: pxToRem(14);
+}
+
+.area{
+    margin-left: pxToRem(16);
+    margin-right: pxToRem(16);
+    border-radius: pxToRem(15);
+    box-shadow: 0 pxToRem(1.5) pxToRem(15) 0 rgba(0,0,0,0.02), 0 pxToRem(6) pxToRem(12) 0 rgba(0,0,0,0.08);
+    margin-top: pxToRem(24);
+    .divider{
+        margin: 0 pxToRem(17) 0 pxToRem(15);
+        border-bottom: pxToRem(0.5) solid #E5E5E5;
+    }
+}
+
+.content{
+    padding-top: pxToRem(14);
+    padding-bottom: pxToRem(14);
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .red{
+            color: #E64545 !important;
+        }
+        .green{
+            color: #3AA64C !important;
+        }
+        li{
+            flex: 1;
+            max-width: 33.333% !important;
+            padding: 0 pxToRem(6);
+            text-align: center;
+            &.border-right{
+                border-right: pxToRem(0.5) solid #E5E5E5;
+            }
+            .big-number{
+                font-family: PingFangSC-Medium;
+                font-size: pxToRem(18);
+                font-weight: 500;
+                text-align: center;
+            }
+            .line{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .small-text{
+                font-family: PingFangSC-Regular;
+                font-size: pxToRem(11);
+                color: #333333;
+                margin: pxToRem(7) pxToRem(2.5) pxToRem(4)
+            }
+            .big-text{
+                font-family: PingFangSC-Regular;
+                font-size: pxToRem(16);
+                color: #333333;
+                text-align: center;
+                //换行的处理方式（加上省略号）
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                //多行的处理方式（加上省略号）
+                //display: -webkit-box;
+                //text-overflow: ellipsis;
+                //overflow: hidden;
+                //-webkit-line-clamp: 1;
+                //-webkit-box-orient:vertical;
+                //font-size: pxToRem(13);
+            }
+            .big-text-smaller{
+                font-size: pxToRem(13) !important;
+            }
+            .medium-number{
+                font-family: PingFangSC-Medium;
+                font-size: pxToRem(16);
+                text-align: center;
+                font-weight: 500;
+                margin-top: pxToRem(4);
+            }
+        }
+    }
+}
+
+.des-content{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: pxToRem(20) pxToRem(16);
+    padding-left: pxToRem(12);
+    height: pxToRem(40);
+    background-color: #FDF6E6;
+    font-family: PingFangSC-Regular;
+    font-size: pxToRem(14);
+    color: #D9981C;
+    letter-spacing: 0;
+    line-height: pxToRem(14);
+    .right-content{
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        color: #D9981C;
+        .arrow-y{
+            width: pxToRem(6.89);
+            height: pxToRem(12);
+            display: inline-block;
+            background: url(../images/arrow-yellow.png) no-repeat center;
+            background-size: 100% 100%;
+            margin-left: pxToRem(4.55);
+            margin-right: pxToRem(12);
+        }
+    }
+}
+
+.msg{
+    font-family: PingFangSC-Regular;
+    font-size: pxToRem(12);
+    color: #999999;
+    text-align: center;
+    margin-top: pxToRem(8);
+    padding-bottom: pxToRem(25);
+}

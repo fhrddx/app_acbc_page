@@ -1,0 +1,20 @@
+/**
+ * 跟CLI更新，请勿擅自修改！！
+ * Beisea：2022-02-22
+ */
+{
+    "presets": [
+        [
+            "env",
+            {
+                // "modules": false
+            }
+        ],
+        "stage-2"
+    ],
+    // 下面指的是在生成的文件中，不产生注释
+    "comments": false,
+    "plugins": [
+        "transform-runtime"
+    ]
+}

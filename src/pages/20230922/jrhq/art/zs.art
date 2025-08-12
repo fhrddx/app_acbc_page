@@ -1,0 +1,7 @@
+{{each data value i}}
+    <div class="table-line">
+        <div>{{value.name}}：</div>
+        <div class="{{value.color}}">{{value.value}}</div>
+        <div class="{{value.color}}">{{value.rate}}</div>
+    </div>
+{{/each}}

@@ -1,0 +1,15 @@
+@mixin selectValueByTheme($key, $wValue, $bValue) {
+    [theme='skinW'] & {
+        #{$key}: $wValue;
+    }
+
+    [theme='skinB'] & {
+        #{$key}: $bValue;
+    }
+}
+
+@function pxToRem($px) {
+    $baseSize: 20;
+
+    @return ($px / $baseSize)+rem;
+}
