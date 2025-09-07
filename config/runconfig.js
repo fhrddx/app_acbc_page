@@ -8,6 +8,7 @@ var runconfig = {
             "push72": "https://72.push2.eastmoney.com/",
             "push99": "https://99.push2.eastmoney.com/",
             "push2": "https://push2.eastmoney.com/",
+            "push2his": "https://push2his.eastmoney.com/"
         },
         "appSetting": {
             "appSetting_caifuhao": 'appSetting is 1000',
@@ -19,6 +20,7 @@ var runconfig = {
             "push72": "https://72.push2.eastmoney.com/",
             "push99": "https://99.push2.eastmoney.com/",
             "push2": "https://push2.eastmoney.com/",
+            "push2his": "https://push2his.eastmoney.com/"
         },
         "appSetting": {
             "appSetting_caifuhao": 'appSetting is 1000',
@@ -30,6 +32,7 @@ var runconfig = {
             "push72": "https://72.push2.eastmoney.com/",
             "push99": "https://99.push2.eastmoney.com/",
             "push2": "https://push2.eastmoney.com/",
+            "push2his": "https://push2his.eastmoney.com/"
         },
         "appSetting": {
             "appSetting_caifuhao": 'appSetting is 1000',
@@ -41,6 +44,7 @@ var runconfig = {
             "push72": "https://72.push2.eastmoney.com/",
             "push99": "https://99.push2.eastmoney.com/",
             "push2": "https://push2.eastmoney.com/",
+            "push2his": "https://push2his.eastmoney.com/"
         },
         "appSetting": {
             "appSetting_caifuhao": 'appSetting is 1000',
