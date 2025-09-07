@@ -1,6 +1,7 @@
 import '../../../static/css/stock.scss'
 import { emBase, emUtility } from 'emglobaljs/dist/emGlobal'
 import $ from 'jquery'
+import kline from './kline';
 const artRuntime = require('art-template/lib/runtime')
 declare const emconfig: any;
 declare const window: any;
@@ -67,6 +68,7 @@ var page = {
     日K：DK | 周K：WK | 月K：MK | 5分钟、15分钟、30分钟、60分钟 分别对应 M5K、M15K、M30K、M60K
     */
     drawChart(){
+        /*
         let type = this.state.chartType;
         let containerId = 'timechart';
         let marketCode = this.state.code;
@@ -104,7 +106,15 @@ var page = {
             });
             chartK.draw();
         }
+        */
         this.state.loadingChart = false;
+
+        const klineChart = new kline({
+          code: '90.BK1015',
+          container: document.getElementById('timechart')
+        });
+
+        klineChart.draw();
     },
     registerTemplateFunction(){
         //颜色
