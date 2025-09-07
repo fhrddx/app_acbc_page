@@ -27,7 +27,7 @@ var runconfig = {
         },
         "log": 'https://emstatic.eastmoney.com/JsLogTrack11', //日志推送
     },
-    "192.168.0.104": {
+    "192.168.18.112": {
         "api": {
             "push72": "https://72.push2.eastmoney.com/",
             "push99": "https://99.push2.eastmoney.com/",

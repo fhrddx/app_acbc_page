@@ -110,7 +110,7 @@ var page = {
         this.state.loadingChart = false;
 
         const klineChart = new kline({
-          code: '90.BK1015',
+          code: '90.BK1033',
           container: document.getElementById('timechart')
         });
 
