@@ -14,6 +14,9 @@ export default class kline{
     this.code = params.code;
     this.container = params.container;
     this.canvas = params.canvas;
+    
+    alert(this.container.clientHeight);
+
   }
 
   draw(){
