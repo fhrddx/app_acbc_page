@@ -55,6 +55,7 @@
     "babel-preset-es2015": "^6.24.1",
     "emglobaljs": "^1.0.81",
     "regenerator-runtime": "^0.13.7",
+    "start": "^5.1.0",
     "vconsole-webpack-plugin": "^1.5.1"
   }
 }
