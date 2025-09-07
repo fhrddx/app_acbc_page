@@ -111,7 +111,8 @@ var page = {
 
         const klineChart = new kline({
           code: '90.BK1033',
-          container: document.getElementById('timechart')
+          container: document.getElementById('timechart'),
+          canvas: document.getElementById('canvas')
         });
 
         klineChart.draw();
